@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.student-portal {
+    display: flex;
+    background-color: #bcbcbc;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: rgb(56, 56, 56);
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.menu-item:hover {
+    background-color: #000000;
+}
+
+.menu-item.active {
+    background-color: #4290a3;
+    color: #ffffff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.message-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.message-item:last-child {
+    border-bottom: none;
+}
+
+.message-item:hover {
+    background-color: #f2f2f2;
+}
+
+.message-item .sender {
+    font-weight: bold;
+}
+
+.message-item .subject {
+    margin-top: 5px;
+    color: #333;
+}
+
+.message-item .timestamp {
+    color: #888;
+}
+
+.message-item.active {
+    background-color: #4290a3;
+    color: white;
+}
